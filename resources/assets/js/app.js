@@ -1,12 +1,11 @@
 import $ from 'jquery';
 import _ from 'lodash';
-import 'bootstrap-sass';
 import Vue from 'vue';
 import axios from 'axios';
 
 window.$ = window.jQuery = $;
 window.axios = axios;
-
+require('bootstrap-sass');
 import router from './routes';
 import store from './store/index';
 import App from './components/App.vue';
