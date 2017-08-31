@@ -18,7 +18,7 @@
     export default {
         name: 'app',
         created() {
-            if(jwtToken.getToken()) {
+            if (jwtToken.getToken()) {
                 this.$store.dispatch('setAuthUser');
             }
         },
