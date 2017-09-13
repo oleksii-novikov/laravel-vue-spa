@@ -11,6 +11,7 @@ import ProfileWrapper from './components/profile-wrapper/ProfileWrapper.vue'
 import Profile from './components/profile/Profile.vue'
 import EditProfile from './components/edit-profile/EditProfile.vue'
 import EditPassword from './components/edit-password/EditPassword.vue'
+import Quotes from './components/quotes/Quotes.vue'
 
 const router = new VueRouter({
     mode: 'history',
@@ -50,6 +51,12 @@ const router = new VueRouter({
                     meta: { requiresAuth: true }
                 }
             ]
+        },
+        {
+            path: '/quotes',
+            name: 'quotes',
+            component: Quotes,
+            meta: {}
         },
     ]
 });
